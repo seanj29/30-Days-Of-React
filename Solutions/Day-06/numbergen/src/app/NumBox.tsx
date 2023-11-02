@@ -21,9 +21,15 @@ function test_prime(n: number)
   }
 }
 
+interface NumBoxType {
+  number: number;
+  // You can add more props here
+}
 
-const NumBox = ({number = 0}) => {
-    
+const NumBox = (props: NumBoxType) => {
+
+  let number = props.number;
+  
     let bg: string = "#228B22" 
 
     if (test_prime(number)){
@@ -38,8 +44,8 @@ const NumBox = ({number = 0}) => {
 
         <div style={{
             backgroundColor : bg,
-            width: '12cem',
-            height: '7em',
+            width: '4vw',
+            height: '10vh',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',

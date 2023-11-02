@@ -1,6 +1,12 @@
 import NumBox from "./NumBox";
+interface NumBoxListType {
+    numarr: number[];
+    // You can add more props here
+  }
 
-const NumBoxList = ({numarr = [0,1]}) => {
+
+function NumBoxList(props: NumBoxListType) {
+    let numarr = props.numarr;
 
     const listofnums = numarr.map((num) => (
         <li key = {num} style={{display: 'block'}}>

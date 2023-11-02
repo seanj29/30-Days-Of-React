@@ -1,4 +1,3 @@
-import styles from './page.module.css'
 import NumBoxList from './NumBoxList'
 
 export default function Home() {
