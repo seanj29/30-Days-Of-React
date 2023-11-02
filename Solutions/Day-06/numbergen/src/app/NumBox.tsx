@@ -38,8 +38,8 @@ const NumBox = ({number = 0}) => {
 
         <div style={{
             backgroundColor : bg,
-            width: '100px',
-            height: '100px',
+            width: '12cem',
+            height: '7em',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
